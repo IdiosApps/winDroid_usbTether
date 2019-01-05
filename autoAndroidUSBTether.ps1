@@ -13,7 +13,7 @@ do { # huge do-while loop to keep USB detection alive
         $pluggedInCheck = Invoke-Expression "cmd /c adb devices | out-string"
         if ($pluggedInCheck.Contains('ADB_DEVICE_CODE')) { ### USE YOUR DEVICE'S ADB HERE (run "adb devices" in a command prompt to get this - requires adb drivers)
             # when phone is plugged in, check if we have internet
-            $pingTest = Invoke-Expression "cmd /c ping 8.8.8.8 -n 1 | out-string"
+            $pingTest = Invoke-Expression "cmd /c ping 1.1.1.1 -n 1 | out-string"
             if ($pingTest.Contains("PING: transmit failed")) {
                 # we don't have internet, so let's enable USB tethering
                 # first, let's unlock
