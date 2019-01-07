@@ -10,8 +10,8 @@ Share your Android phone's Wi-Fi conneciton with your Windows desktop! Probably 
 # 2.2 using this tool
 1) change ADB_DEVICE_CODE to your device's ADB ID, e.g. 8kwi279l2748. You can get this ID by running "adb devices" (without the double quotation marks) in a command prompt (cmd.exe). This means the script will only try to run for your phone specifically
 2) change ANDROID_PIN_CODE to match your Android device's password/PIN
-3.1) place the script in your startup folder (You can find this with Win+R "shell:startup")
-3.2) you can have the script launched as minimized by placing a shortcut to it in your startup folder, and change the property "Run:" to "Minimized"
+3.1) place the .ps1 script in a safe folder
+3.2) place the .bat file in your startup folder  (you can find this with Win+R "shell:startup"). Change the directory inside it to point at the .ps1 file.
 
 # 3 issues
 - Non-stock flavours of Android may not interpret the ADB commands as expected (please give me feedback, and I'll try to work around this if that's the case!)
