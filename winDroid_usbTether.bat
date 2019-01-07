@@ -1,0 +1,1 @@
+Powershell.exe -windowstyle hidden -NoProfile -ExecutionPolicy remotesigned -File C:\winDroid_usbTether.ps1
